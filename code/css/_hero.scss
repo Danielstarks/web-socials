@@ -1,0 +1,31 @@
+/* ========================= Main ==============================*/
+
+main {
+    position: relative;
+    top: 5.4rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: 18vh auto 20vw;
+        column-gap: 2rem;
+        position: relative;
+    }
+
+    /* ======================== Left ========================== */
+
+    .container .left {
+        height: max-content;
+        position: sticky;
+        top: $sticky-top-left;
+    }
+
+    .container .left .profile {
+        padding: $card-padding;
+        background: $color-white;
+        border-radius: $card-border-radius;
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        width: 100%;
+    }
+}
